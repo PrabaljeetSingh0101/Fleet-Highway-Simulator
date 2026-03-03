@@ -25,3 +25,43 @@ Fleet Highway Simulator is a Java-based multithreaded application that tracks th
 1. Open your terminal and navigate to the project folder:
    ```bash
    cd path/to/Java_Assignment3
+
+```
+
+2. Run the following command to compile, execute, and automatically clean up `.class` files upon closing:
+```bash
+javac Main/*.java ThreadsHandler/*.java AbstractVehicle/*.java ConcreteVehicle/*.java GlobalVariables/*.java MakeVehicles/*.java && java Main.MainFrame; find . -name "*.class" -type f -delete
+
+```
+
+
+*(Note: The command has been adapted from the original `BirthPlace` package structure to match the provided source code directories).*
+
+### For Windows Users
+
+1. Open Command Prompt and navigate to the project folder:
+```cmd
+cd path\to\Java_Assignment3
+
+```
+
+
+2. Run the following command to compile all Java files and run the program:
+```cmd
+javac Main\*.java ThreadsHandler\*.java AbstractVehicle\*.java ConcreteVehicle\*.java GlobalVariables\*.java MakeVehicles\*.java && java Main.MainFrame & del /s /q *.class
+
+```
+
+
+*(Note: Adapted for the multi-package directory structure).*
+
+## Concepts Demonstrated
+
+* **Multithreading & Concurrency:** Creating and managing multiple `Thread` and `Runnable` objects.
+* **Synchronization:** Using `synchronized` blocks and lock objects to prevent race conditions on volatile variables.
+* **Swing Event Dispatch Thread (EDT):** Safe GUI manipulation from background worker threads.
+* **Object-Oriented Programming:** Inheritance, Abstraction, and Encapsulation.
+
+```
+
+```
